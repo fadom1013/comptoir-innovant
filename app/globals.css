@@ -1,0 +1,37 @@
+/* 1. Les imports de polices doivent TOUJOURS être tout en haut */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+/* 2. Import Tailwind */
+@import "tailwindcss";
+
+/* 3. Configuration du thème */
+@theme {
+  /* LE COMPTOIR */
+  --color-comptoir-fond: #F4EFE6;
+  --color-comptoir-encre: #1E1A17;
+  --color-comptoir-bois: #433129;
+  --color-comptoir-accent: #D44B28;
+
+  /* L'INNOVANT */
+  --color-tech-spark: #4338CA;
+  --color-tech-glow: #10B981;
+  --color-surface: #FFFFFF;
+
+  /* EFFETS RELIEF */
+  --border-width-brut: 3px;
+  --shadow-brut: 6px 6px 0px 0px #1E1A17;
+  --shadow-btn: 3px 3px 0px 0px #1E1A17;
+}
+
+/* 4. Règles globales */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-mono-bistro {
+  font-family: 'Courier Prime', monospace;
+}
