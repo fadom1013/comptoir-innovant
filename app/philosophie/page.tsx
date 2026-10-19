@@ -19,7 +19,7 @@ export default function PhilosophiePage() {
             PHILOSOPHIE PRODUIT
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            Ma méthode : Le "Product-First".
+            Ma méthode : Le "product-first".
           </h1>
           <p className="text-xl font-bold text-comptoir-bois leading-relaxed max-w-3xl">
             "Beaucoup de prestataires complexifient le web. Mon approche est celle d'un artisan : je bâtis des outils solides, rapides et utiles. J'utilise des bases techniques éprouvées pour ne pas réinventer l'eau chaude et me concentrer sur ce qui compte : votre message."
@@ -47,7 +47,7 @@ export default function PhilosophiePage() {
             </div>
             <div className="bg-white rounded-2xl border-[3px] border-comptoir-encre p-6 shadow-brut space-y-3">
               <span className="font-mono-bistro text-xl font-black text-comptoir-accent">03.</span>
-              <h3 className="text-xl font-bold">Livraison & Formation</h3>
+              <h3 className="text-xl font-bold">Livraison & formation</h3>
               <p className="text-sm font-medium text-comptoir-encre/80">Mise en ligne, transmission des accès et 30 min de formation à votre autonomie.</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function PhilosophiePage() {
         <section className="space-y-6">
           <div className="border-b-2 border-comptoir-encre pb-2">
             <h2 className="text-2xl font-black uppercase font-mono-bistro text-comptoir-encre">
-              // Comparatif : Agence classique vs L'Essentiel Web
+              // Comparatif : Agence classique vs le comptoir innovant
             </h2>
           </div>
 
@@ -67,7 +67,7 @@ export default function PhilosophiePage() {
                 <tr className="bg-comptoir-encre text-white font-mono-bistro text-xs uppercase">
                   <th className="p-4 border-b-2 border-comptoir-encre">Critère</th>
                   <th className="p-4 border-b-2 border-comptoir-encre text-comptoir-fond/70">Agence Web Classique</th>
-                  <th className="p-4 border-b-2 border-comptoir-encre text-comptoir-accent">L'Essentiel Web</th>
+                  <th className="p-4 border-b-2 border-comptoir-encre text-comptoir-accent">Le comptoir innovant</th>
                 </tr>
               </thead>
               <tbody className="divide-y-2 divide-comptoir-encre/10 text-xs md:text-sm font-semibold">

@@ -8,14 +8,14 @@ export default function OffrePrincipalePage() {
         {/* EN-TÊTE PAGE */}
         <section className="space-y-4 border-b-4 border-comptoir-encre pb-8">
           <div className="inline-block bg-tech-spark text-white font-mono-bistro text-xs font-bold px-3 py-1 rounded border border-comptoir-encre">
-            OFFRE PRINCIPALE • SUR-MESURE & SAAS
+            OFFRE SUR-MESURE
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             Outils Métiers, Back-Offices & MVP SaaS
           </h1>
           <p className="text-xl font-bold text-comptoir-bois max-w-2xl">
-            Remplacer les tableurs complexes, automatiser les saisies répétitives
-            et lancer votre première version fonctionnelle en 3 à 6 semaines.
+            Remplacer les tableurs complexes, automatiser les saisies répétitives 
+            et lancer votre première version fonctionnelle rapidement.
           </p>
         </section>
 
@@ -33,7 +33,7 @@ export default function OffrePrincipalePage() {
               </div>
 
               <div>
-                <div className="text-3xl font-black text-comptoir-accent">Sur Devis</div>
+                <div className="text-3xl font-black text-comptoir-accent">Sur devis</div>
                 <span className="text-xs font-semibold text-comptoir-encre/70 block font-mono-bistro mt-1">
                   Livraison sous 3 à 6 semaines
                 </span>
@@ -52,15 +52,11 @@ export default function OffrePrincipalePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-tech-glow font-bold">✔</span>
-                  <span>Gestion de données dynamiques (CRUD)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-tech-glow font-bold">✔</span>
                   <span>Intégrations tiers (Paiement, Emails)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-tech-glow font-bold">✔</span>
-                  <span>Stack évolutive vers V2 sans tout refaire</span>
+                  <span>Application évolutive vers V2 sans tout refaire</span>
                 </li>
               </ul>
             </div>
@@ -82,7 +78,7 @@ export default function OffrePrincipalePage() {
                   Lorsque les outils standards du marché ou les feuilles de calcul atteignent leurs limites, la tentation est grande de commander une « usine à gaz ». Mon approche privilégie le pragmatisme : nous identifions la fonctionnalité <strong>unique et indispensable</strong> qui résout votre blocage réel.
                 </p>
                 <p>
-                  Je conçois des back-offices clairs et des applications SaaS robustes utilisant des technologies modernes (Next.js, Supabase) qui garantissent rapidité d&apos;exécution et maîtrise de la dette technique.
+                  Je conçois des back-offices clairs et des applications SaaS robustes utilisant des technologies modernes qui garantissent rapidité d&apos;exécution et maîtrise de la dette technique.
                 </p>
               </div>
             </div>
@@ -90,7 +86,7 @@ export default function OffrePrincipalePage() {
             <div className="bg-comptoir-fond p-4 rounded-xl border-2 border-comptoir-encre space-y-2 mt-auto">
               <span className="font-mono-bistro text-xs font-bold text-comptoir-accent uppercase">// Garanties du projet</span>
               <p className="text-sm font-bold">
-                Aucun composant inutile, code propre et documenté, hébergement sécurisé sur infrastructure cloud performante.
+                Aucun composant inutile, code propre et documenté, hébergement sécurisé sur infrastructure cloud.
               </p>
             </div>
           </div>

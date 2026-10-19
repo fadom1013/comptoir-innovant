@@ -13,7 +13,7 @@ export default function OffreSecondairePage() {
     },
     {
       q: "Mon site sera-t-il facile à gérer ?",
-      r: "Oui ! Nous installons des outils simples et intuitifs (WordPress propre / Gutenberg). Une formation de 30 minutes est incluse pour vous rendre 100% autonome."
+      r: "Oui ! Nous installons des outils simples et intuitifs. Une formation de 30 minutes est incluse pour vous rendre 100% autonome."
     },
     {
       q: "Dois-je payer un abonnement ?",
@@ -32,7 +32,7 @@ export default function OffreSecondairePage() {
         {/* EN-TÊTE PAGE */}
         <section className="space-y-4 border-b-4 border-comptoir-encre pb-8">
           <div className="inline-block bg-comptoir-accent text-white font-mono-bistro text-xs font-bold px-3 py-1 rounded border border-comptoir-encre">
-            OFFRE SECONDAIRE • SITES VITRINES & CONTENU
+            SITES VITRINES & CONTENU
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             Tout ce dont vous avez besoin pour réussir en ligne sous 2 semaines.
@@ -47,12 +47,11 @@ export default function OffreSecondairePage() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b-2 border-comptoir-encre/10 pb-6">
             <div>
               <span className="font-mono-bistro text-xs font-bold uppercase text-comptoir-accent">Formule Clé en main</span>
-              <h2 className="text-3xl font-black">Le Pack Essentiel</h2>
+              <h2 className="text-3xl font-black">Le pack essentiel</h2>
               <p className="text-sm font-medium text-comptoir-encre/70 mt-1">Livraison sous 1 à 2 semaines</p>
             </div>
             <div className="text-right">
               <span className="text-3xl font-black text-comptoir-accent">À partir de 690€</span>
-              <span className="block text-xs font-mono-bistro text-comptoir-encre/60">(Tarif standard : 1 500€)</span>
             </div>
           </div>
 
@@ -60,7 +59,7 @@ export default function OffreSecondairePage() {
             <ul className="space-y-3 font-semibold text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-tech-glow font-bold">✔</span>
-                <span><strong>Design Personnalisé :</strong> Votre logo, vos couleurs et votre univers unique.</span>
+                <span><strong>Design personnalisé :</strong> Votre logo, vos couleurs et votre univers unique.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-tech-glow font-bold">✔</span>
@@ -141,7 +140,7 @@ export default function OffreSecondairePage() {
                 <p className="text-xs text-comptoir-encre/80 font-medium">Faire évoluer votre site durant les premiers mois.</p>
                 <ul className="text-xs space-y-2 font-semibold pt-2 border-t border-comptoir-encre/10">
                   <li>✔ Tout le forfait Maintenance</li>
-                  <li>✔ <strong>Crédit Temps de 3h</strong> (valable 3 mois)</li>
+                  <li>✔ <strong>Crédit temps de 3h</strong> (valable 3 mois)</li>
                   <li>✔ Modifications design / aides articles</li>
                 </ul>
               </div>
@@ -156,7 +155,7 @@ export default function OffreSecondairePage() {
                 <p className="text-xs text-comptoir-encre/80 font-medium">Partenaire technique à vos côtés toute l'année.</p>
                 <ul className="text-xs space-y-2 font-semibold pt-2 border-t border-comptoir-encre/10">
                   <li>✔ Tout le forfait Maintenance</li>
-                  <li>✔ <strong>Crédit Temps de 15h</strong> (valable 12 mois)</li>
+                  <li>✔ <strong>Crédit temps de 15h</strong> (valable 12 mois)</li>
                   <li>✔ Nouvelles sections & pages de vente</li>
                 </ul>
               </div>

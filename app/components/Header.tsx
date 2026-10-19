@@ -2,32 +2,44 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="border-b border-slate-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-comptoir-fond/90 backdrop-blur-md border-b-2 border-comptoir-encre/10 transition-all">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         
-        {/* Branding */}
-        <Link href="/" className="font-extrabold text-brand-navy text-lg tracking-tight">
-          LE COMPTOIR <span className="text-brand-orange">INNOVANT</span>
+        {/* LOGO / BRANDING COMPACT */}
+        <Link href="/" className="font-extrabold text-xl tracking-tight text-comptoir-encre hover:opacity-80 transition-opacity">
+          LE COMPTOIR <span className="text-comptoir-accent">INNOVANT</span>
         </Link>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-          <Link href="/offres/principale" className="hover:text-brand-orange transition-colors">
+        {/* NAVIGATION LIENS */}
+        <nav className="hidden md:flex items-center space-x-6 font-mono-bistro text-xs font-bold uppercase text-comptoir-encre">
+          <Link 
+            href="/offres/principale" 
+            className="hover:text-comptoir-accent transition-colors py-1 underline decoration-transparent hover:decoration-comptoir-accent underline-offset-4"
+          >
             Outils Essentiels & V1
           </Link>
-          <Link href="/offres/secondaire" className="hover:text-brand-orange transition-colors">
+          <Link 
+            href="/offres/secondaire" 
+            className="hover:text-comptoir-accent transition-colors py-1 underline decoration-transparent hover:decoration-comptoir-accent underline-offset-4"
+          >
             Sites Web Simples
           </Link>
-          <Link href="/philosophie" className="hover:text-brand-orange transition-colors">
+          <Link 
+            href="/philosophie" 
+            className="hover:text-comptoir-accent transition-colors py-1 underline decoration-transparent hover:decoration-comptoir-accent underline-offset-4"
+          >
             Ma Méthode
           </Link>
+          
+          {/* BOUTON ACTION RELIEF */}
           <Link 
             href="/contact" 
-            className="bg-brand-orange hover:bg-orange-700 text-white px-4 py-2 rounded-lg font-bold transition-all shadow-sm"
+            className="bg-comptoir-accent text-white font-extrabold px-4 py-2 rounded-lg border-2 border-comptoir-encre shadow-btn hover:translate-x-0.5 hover:translate-y-0.5 transition-all ml-2"
           >
             Démarrer un projet
           </Link>
         </nav>
+
       </div>
     </header>
   );

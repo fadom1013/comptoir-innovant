@@ -2,33 +2,24 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-comptoir-fond text-comptoir-encre py-12 px-4 selection:bg-tech-spark selection:text-white">
+    <main className="min-h-screen bg-comptoir-fond text-comptoir-encre py-10 px-4 selection:bg-tech-spark selection:text-white">
       <div className="max-w-6xl mx-auto space-y-16">
         
-        {/* HEADER / ENSEIGNE */}
-        <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b-4 border-comptoir-encre">
-          <div className="space-y-1">
-            <Link href="/" className="text-3xl md:text-4xl font-black tracking-tight text-comptoir-encre hover:opacity-90">
-              LE COMPTOIR <span className="text-comptoir-accent underline decoration-comptoir-accent/40 decoration-wavy">INNOVANT</span>
-            </Link>
-            <p className="font-mono-bistro text-xs uppercase tracking-wider text-comptoir-encre/70 font-bold">
-              • Développement Web & Solutions Sur-Mesure
-            </p>
-          </div>
-
+        {/* HERO SECTION / ATTACK DIRECTE */}
+        <section className="space-y-8 pt-4">
+          
+          {/* BULLE D'ÉTAT DISPONIBILITÉ */}
           <div className="inline-flex items-center gap-3 px-4 py-2 bg-white border-2 md:border-[3px] border-comptoir-encre shadow-btn rounded-lg transform -rotate-1">
             <span className="relative flex h-3.5 w-3.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-tech-glow opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-tech-glow"></span>
             </span>
             <span className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre">
-              Disponible pour vos projets
+              Disponible vos sites et applications métiers
             </span>
           </div>
-        </header>
 
-        {/* HERO SECTION / L'ACCROCHE GLOBALE */}
-        <section className="space-y-8 py-4">
+          {/* ACCROCHE ET PROMESSE */}
           <div className="max-w-4xl space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-comptoir-encre leading-[1.05]">
               Arrêtez de vous battre avec des outils inadaptés.
@@ -40,6 +31,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* BOUTONS D'ACTION */}
           <div className="pt-2 flex flex-wrap items-center gap-6">
             <Link 
               href="/contact" 
@@ -71,12 +63,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="font-mono-bistro text-xs font-bold uppercase bg-tech-spark text-white px-3 py-1 rounded border border-comptoir-encre">
-                    Offre Principale
+                    APPLICATIONS 
                   </span>
-                  <span className="text-xs font-mono-bistro font-bold text-comptoir-encre/60">V1 / MVP SaaS</span>
                 </div>
                 <h3 className="text-2xl font-bold text-comptoir-encre">
-                  Outils Métiers & Applications Sur-Mesure
+                  Outils métiers & applications
                 </h3>
                 <p className="text-sm font-medium text-comptoir-encre/80 leading-relaxed">
                   Pour automatiser vos processus, remplacer des fichiers Excel trop lourds, ou lancer la V1 d'un produit SaaS.
@@ -101,12 +92,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="font-mono-bistro text-xs font-bold uppercase bg-comptoir-accent text-white px-3 py-1 rounded border border-comptoir-encre">
-                    Offre Secondaire
+                    SITES
                   </span>
-                  <span className="text-xs font-mono-bistro font-bold text-comptoir-encre/60">WordPress Clean</span>
                 </div>
                 <h3 className="text-2xl font-bold text-comptoir-encre">
-                  Sites Web Simples & Contenu
+                  Sites web simples & contenu
                 </h3>
                 <p className="text-sm font-medium text-comptoir-encre/80 leading-relaxed">
                   Pour les associations, PME et indépendants qui veulent un site clair, léger, et modifiable en totale autonomie.
@@ -114,7 +104,7 @@ export default function Home() {
                 <ul className="space-y-2 text-xs font-semibold text-comptoir-encre/90">
                   <li className="flex items-center gap-2"><span className="text-tech-glow font-bold">✔</span> Blogs, actualités, vitrines institutionnelles</li>
                   <li className="flex items-center gap-2"><span className="text-tech-glow font-bold">✔</span> Édition facile des textes et images sans coder</li>
-                  <li className="flex items-center gap-2"><span className="text-tech-glow font-bold">✔</span> WordPress épuré, zéro usine à gaz</li>
+                  <li className="flex items-center gap-2"><span className="text-tech-glow font-bold">✔</span> Site épuré, zéro usine à gaz</li>
                 </ul>
               </div>
 
@@ -122,7 +112,7 @@ export default function Home() {
                 href="/offres/secondaire" 
                 className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre group-hover:text-comptoir-accent flex items-center gap-2 pt-4 border-t border-comptoir-encre/10"
               >
-                En savoir plus sur les sites web simples →
+                En savoir plus sur les sites web →
               </Link>
             </div>
 
