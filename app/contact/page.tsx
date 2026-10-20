@@ -4,10 +4,36 @@ import { useState } from 'react';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+
+    // REMPLACE L'URL CI-DESSOUS PAR TON ENDPOINT FORMSPREE
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/mppqebkp";
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+      }
+    } catch (error) {
+      alert("Impossible d'envoyer le formulaire pour le moment.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -33,7 +59,7 @@ export default function ContactPage() {
             <div className="p-6 bg-tech-glow/10 border-2 border-tech-glow rounded-xl text-center space-y-3">
               <h3 className="text-2xl font-bold text-comptoir-encre">Merci ! Message bien reçu.</h3>
               <p className="text-sm font-semibold text-comptoir-encre/80">
-                Je prends connaissance de votre demande et je vous réponds sous 24 heures pour convenir d'un échange.
+                Un email vient de m&apos;être envoyé. Je prends connaissance de votre demande et je vous réponds sous 24h.
               </p>
             </div>
           ) : (
@@ -45,6 +71,7 @@ export default function ContactPage() {
                   <label className="block text-xs font-mono-bistro font-bold uppercase">Nom & Prénom *</label>
                   <input 
                     type="text" 
+                    name="nom_prenom"
                     required 
                     placeholder="Jean Dupont"
                     className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent"
@@ -54,6 +81,7 @@ export default function ContactPage() {
                   <label className="block text-xs font-mono-bistro font-bold uppercase">Société / Association</label>
                   <input 
                     type="text" 
+                    name="structure"
                     placeholder="Nom de votre structure"
                     className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent"
                   />
@@ -66,6 +94,7 @@ export default function ContactPage() {
                   <label className="block text-xs font-mono-bistro font-bold uppercase">Email de contact *</label>
                   <input 
                     type="email" 
+                    name="email"
                     required 
                     placeholder="jean@exemple.fr"
                     className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent"
@@ -75,6 +104,7 @@ export default function ContactPage() {
                   <label className="block text-xs font-mono-bistro font-bold uppercase">Domaine d'activité *</label>
                   <input 
                     type="text" 
+                    name="activite"
                     required
                     placeholder="Ex: Artisanat, BTP, Association..."
                     className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent"
@@ -86,18 +116,18 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label className="block text-xs font-mono-bistro font-bold uppercase">État de vos contenus *</label>
-                  <select className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent">
-                    <option>Prêts (Textes et photos)</option>
-                    <option>En cours de rédaction</option>
-                    <option>Non préparés</option>
+                  <select name="etat_contenus" className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent">
+                    <option value="Prêts">Prêts (Textes et photos)</option>
+                    <option value="En cours">En cours de rédaction</option>
+                    <option value="Non préparés">Non préparés</option>
                   </select>
                 </div>
                 <div className="space-y-2">
                   <label className="block text-xs font-mono-bistro font-bold uppercase">Délai idéal pour la mise en ligne</label>
-                  <select className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent">
-                    <option>Moins de 2 semaines</option>
-                    <option>Dans le mois</option>
-                    <option>Pas d'urgence</option>
+                  <select name="delai" className="w-full p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg text-sm font-semibold focus:outline-none focus:border-comptoir-accent">
+                    <option value="Moins de 2 semaines">Moins de 2 semaines</option>
+                    <option value="Dans le mois">Dans le mois</option>
+                    <option value="Pas d'urgence">Pas d'urgence</option>
                   </select>
                 </div>
               </div>
@@ -107,16 +137,16 @@ export default function ContactPage() {
                 <label className="block text-xs font-mono-bistro font-bold uppercase">Votre besoin principal :</label>
                 <div className="space-y-2 text-sm font-semibold">
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
-                    <input type="checkbox" className="accent-comptoir-accent w-4 h-4" />
-                    <span>Création d'un site complet</span>
+                    <input type="checkbox" name="besoin_pack_essentiel" className="accent-comptoir-accent w-4 h-4" />
+                    <span>Création d'un site complet (Pack Essentiel)</span>
                   </label>
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
-                    <input type="checkbox" className="accent-comptoir-accent w-4 h-4" />
-                    <span>Outil métier ou application V1</span>
+                    <input type="checkbox" name="besoin_outil_metier" className="accent-comptoir-accent w-4 h-4" />
+                    <span>Outil métier ou application V1 / MVP</span>
                   </label>
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
-                    <input type="checkbox" className="accent-comptoir-accent w-4 h-4" />
-                    <span>Maintenance d'un site existant</span>
+                    <input type="checkbox" name="besoin_maintenance" className="accent-comptoir-accent w-4 h-4" />
+                    <span>Maintenance et sécurité d'un site existant</span>
                   </label>
                 </div>
               </div>
@@ -125,6 +155,7 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <label className="block text-xs font-mono-bistro font-bold uppercase">Parlez-moi de votre projet *</label>
                 <textarea 
+                  name="message"
                   required
                   rows={4}
                   placeholder="Décrivez brièvement vos attentes ou votre problème actuel..."
@@ -134,9 +165,10 @@ export default function ContactPage() {
 
               <button 
                 type="submit" 
-                className="w-full bg-comptoir-accent text-white font-extrabold text-base py-4 px-8 rounded-xl border-[3px] border-comptoir-encre shadow-brut hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
+                disabled={loading}
+                className="w-full bg-comptoir-accent text-white font-extrabold text-base py-4 px-8 rounded-xl border-[3px] border-comptoir-encre shadow-brut hover:translate-x-0.5 hover:translate-y-0.5 transition-all disabled:opacity-50"
               >
-                Envoyer ma demande de projet →
+                {loading ? "Envoi en cours..." : "Envoyer ma demande de projet →"}
               </button>
 
             </form>
