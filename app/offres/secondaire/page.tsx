@@ -17,7 +17,7 @@ export default function OffreSecondairePage() {
     },
     {
       q: "Dois-je payer un abonnement ?",
-      r: "Non, le site vous appartient à 100%. Seuls votre nom de domaine et l'hébergement (et éventuellemnt les formules que vous prenez) nécessitent un renouvellement annuel auprès de votre prestataire."
+      r: "Non, le site vous appartient à 100%. Seuls votre nom de domaine et l'hébergement (et éventuellement les formules que vous prenez) nécessitent un renouvellement annuel auprès de votre prestataire."
     },
     {
       q: "Proposez-vous un service de maintenance ?",
