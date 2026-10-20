@@ -6,22 +6,16 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
 
-    // REMPLACE L'URL CI-DESSOUS PAR TON ENDPOINT FORMSPREE
-    const FORMSPREE_ENDPOINT = "https://formspree.io/f/mppqebkp";
-
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
       });
 
       if (response.ok) {
@@ -53,7 +47,7 @@ export default function ContactPage() {
           </p>
         </section>
 
-        {/* FORMULAIRE INTELLIGENT */}
+        {/* FORMULAIRE */}
         <section className="bg-white rounded-2xl border-[3px] border-comptoir-encre p-8 shadow-brut">
           {submitted ? (
             <div className="p-6 bg-tech-glow/10 border-2 border-tech-glow rounded-xl text-center space-y-3">
