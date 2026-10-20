@@ -11,7 +11,7 @@ export default function OffrePrincipalePage() {
             OFFRE SUR-MESURE
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            Outils Métiers, Back-Offices & MVP SaaS
+            Applications & outils métiers.
           </h1>
           <p className="text-xl font-bold text-comptoir-bois max-w-2xl">
             Remplacer les tableurs complexes, automatiser les saisies répétitives 
@@ -29,7 +29,7 @@ export default function OffrePrincipalePage() {
                 <span className="font-mono-bistro text-xs font-bold uppercase text-tech-spark">
                   Développement Sur-Mesure
                 </span>
-                <h2 className="text-2xl font-black">MVP & Outil Métier</h2>
+                <h2 className="text-2xl font-black">Applications & outils</h2>
               </div>
 
               <div>
@@ -56,7 +56,7 @@ export default function OffrePrincipalePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-tech-glow font-bold">✔</span>
-                  <span>Application évolutive vers V2 sans tout refaire</span>
+                  <span>Application évolutive</span>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ export default function OffrePrincipalePage() {
                   Lorsque les outils standards du marché ou les feuilles de calcul atteignent leurs limites, la tentation est grande de commander une « usine à gaz ». Mon approche privilégie le pragmatisme : nous identifions la fonctionnalité <strong>unique et indispensable</strong> qui résout votre blocage réel.
                 </p>
                 <p>
-                  Je conçois des back-offices clairs et des applications SaaS robustes utilisant des technologies modernes qui garantissent rapidité d&apos;exécution et maîtrise de la dette technique.
+                  Je conçois des back-offices clairs et des applications robustes utilisant des technologies modernes qui garantissent rapidité d&apos;exécution et maîtrise de la dette technique.
                 </p>
               </div>
             </div>

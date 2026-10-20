@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function PhilosophiePage() {
   const tableauComparatif = [
     { critere: "Délai de livraison", agence: "Souvent entre 3 et 5 mois.", moi: "En moyenne 2 semaines." },
-    { critere: "Tarification", agence: "Devis complexes, frais cachés, prix monstres.", moi: "Prix fixe et transparent (dès 690€)." },
+    { critere: "Tarification", agence: "Devis complexes, frais cachés, prix monstres.", moi: "Prix fixe et transparent." },
     { critere: "Processus", agence: "Processus lourd, réunions interminables.", moi: "Méthode agile & pragmatique centrée produit." },
     { critere: "Gestion technique", agence: "Dépendance technique et outils complexes.", moi: "Outils simples, autonomie garantie à 100%." },
-    { critere: "Propriété du site", agence: "Parfois floue (systèmes propriétaires).", moi: "Propriétaire à 100%, sans abonnement forcé." }
+    { critere: "Propriété du site", agence: "Parfois floue (systèmes propriétaires).", moi: "Propriétaire à 100%, sans abonnement requis." }
   ];
 
   return (

@@ -13,15 +13,15 @@ export default function OffreSecondairePage() {
     },
     {
       q: "Mon site sera-t-il facile à gérer ?",
-      r: "Oui ! Nous installons des outils simples et intuitifs. Une formation de 30 minutes est incluse pour vous rendre 100% autonome."
+      r: "Oui ! J'installe des outils simples et intuitifs. Une visio de 30 minutes ainsi qu'une procédure sont incluses pour vous rendre 100% autonome dans l'alimentation du site (modification des articles/pages/photos ...)."
     },
     {
       q: "Dois-je payer un abonnement ?",
-      r: "Non, le site vous appartient à 100%. Seuls votre nom de domaine et l'hébergement nécessitent un renouvellement annuel auprès de votre prestataire."
+      r: "Non, le site vous appartient à 100%. Seuls votre nom de domaine et l'hébergement (et éventuellemnt les formules que vous prenez) nécessitent un renouvellement annuel auprès de votre prestataire."
     },
     {
       q: "Proposez-vous un service de maintenance ?",
-      r: "Oui, nous proposons plusieurs formules sans engagement pour assurer la sécurité, les sauvegardes et la mise à jour régulière de votre outil."
+      r: "Oui, nous proposons plusieurs formules sans engagement pour assurer la sécurité, les sauvegardes et la mise à jour régulière de votre outil (voir les différentes formules au-dessus)."
     }
   ];
 
@@ -67,17 +67,17 @@ export default function OffreSecondairePage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-tech-glow font-bold">✔</span>
-                <span><strong>Design Mobile :</strong> Navigation fluide et optimisée sur tous les smartphones.</span>
+                <span><strong>Design mobile :</strong> Navigation fluide et optimisée sur tous les smartphones.</span>
               </li>
             </ul>
             <ul className="space-y-3 font-semibold text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-tech-glow font-bold">✔</span>
-                <span><strong>SEO de base :</strong> Code propre et structuré pour être correctement référencé par Google.</span>
+                <span><strong>Référencement de base (SEO) de base :</strong> Code propre et structuré pour être correctement référencé par Google.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-tech-glow font-bold">✔</span>
-                <span><strong>Formation 30 min :</strong> Prise en main vidéo pour modifier vos textes et images en autonomie.</span>
+                <span><strong>Formation 30 min :</strong> Prise en main ensemble pour vous montrer comment modifier vos textes et images en autonomie. Fourniture d'un mémo PDF qui vous appartient.</span>
               </li>
             </ul>
           </div>
@@ -91,7 +91,7 @@ export default function OffreSecondairePage() {
                 <span className="text-comptoir-accent">+90€</span>
               </div>
               <div className="p-3 bg-comptoir-fond rounded-lg border-2 border-comptoir-encre flex justify-between items-center">
-                <span>Rédaction de vos contenus</span>
+                <span>Rédaction de vos contenus (articles, pages ...) si vos contenus ne sont pas prêts au début du projet.</span>
                 <span className="text-comptoir-accent">+200€</span>
               </div>
             </div>
@@ -122,11 +122,13 @@ export default function OffreSecondairePage() {
                 <span className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre/60">Sans Engagement</span>
                 <h3 className="text-xl font-bold">Maintenance</h3>
                 <div className="text-2xl font-black text-comptoir-accent">60 € <span className="text-xs text-comptoir-encre font-normal">/ mois</span></div>
+                <h3 className="text-2xl font-bold">OU</h3>
+                <div className="text-2xl font-black text-comptoir-accent">600 € <span className="text-xs text-comptoir-encre font-normal">/ an (2 mois offerts)</span></div>
                 <p className="text-xs text-comptoir-encre/80 font-medium">Un site disponible, mis à jour et performant sans effort.</p>
                 <ul className="text-xs space-y-2 font-semibold pt-2 border-t border-comptoir-encre/10">
-                  <li>✔ Mises à jour mensuelles sécurité</li>
+                  <li>✔ Mises à jour</li>
                   <li>✔ Intervention réactive sous 24h</li>
-                  <li>✔ Gestion technique hébergeur</li>
+                  <li>✔ Gestion technique du site</li>
                 </ul>
               </div>
             </div>
@@ -136,12 +138,13 @@ export default function OffreSecondairePage() {
               <div className="space-y-3">
                 <span className="font-mono-bistro text-xs font-bold uppercase bg-tech-spark text-white px-2 py-0.5 rounded border border-comptoir-encre inline-block">Populaire</span>
                 <h3 className="text-xl font-bold">Tranquillité</h3>
-                <div className="text-2xl font-black text-comptoir-accent">200 € <span className="text-xs text-comptoir-encre font-normal">forfait</span></div>
+                <div className="text-2xl font-black text-comptoir-accent">120 € <span className="text-xs text-comptoir-encre font-normal">/ mois</span></div>
                 <p className="text-xs text-comptoir-encre/80 font-medium">Faire évoluer votre site durant les premiers mois.</p>
                 <ul className="text-xs space-y-2 font-semibold pt-2 border-t border-comptoir-encre/10">
                   <li>✔ Tout le forfait Maintenance</li>
-                  <li>✔ <strong>Crédit temps de 3h</strong> (valable 3 mois)</li>
-                  <li>✔ Modifications design / aides articles</li>
+                  <li>✔ <strong>Crédit temps de 3h *</strong> (valable 3 mois)</li>
+                  <li>✔ Modifications design & contenu </li>
+                  <li>✔ Support prioritaire</li>
                 </ul>
               </div>
             </div>
@@ -151,19 +154,19 @@ export default function OffreSecondairePage() {
               <div className="space-y-3">
                 <span className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre/60">Support Annuel</span>
                 <h3 className="text-xl font-bold">Sérénité</h3>
-                <div className="text-2xl font-black text-comptoir-accent">600 € <span className="text-xs text-comptoir-encre font-normal">/ an</span></div>
-                <p className="text-xs text-comptoir-encre/80 font-medium">Partenaire technique à vos côtés toute l'année.</p>
+                <div className="text-2xl font-black text-comptoir-accent">1200 € <span className="text-xs text-comptoir-encre font-normal">/ an (soit 100 € / mois)</span></div>
+                <p className="text-xs text-comptoir-encre/80 font-medium">Votre partenaire technique à vos côtés toute l'année.</p>
                 <ul className="text-xs space-y-2 font-semibold pt-2 border-t border-comptoir-encre/10">
                   <li>✔ Tout le forfait Maintenance</li>
-                  <li>✔ <strong>Crédit temps de 15h</strong> (valable 12 mois)</li>
-                  <li>✔ Nouvelles sections & pages de vente</li>
+                  <li>✔ <strong>Crédit temps de 15h *</strong> (valable 12 mois)</li>
+                  <li>✔ Créations de nouvelles sections & pages de votre site</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div className="bg-comptoir-accent/10 border-2 border-comptoir-accent p-4 rounded-xl text-xs font-semibold text-comptoir-encre">
-            💡 <strong>Pourquoi le crédit temps ?</strong> Il évite de refaire un devis pour chaque petite modification. C'est une réserve d'heures mobilisable immédiatement pour vos ajustements avec une priorité sur le planning.
+            💡 <strong> * Pourquoi le crédit temps ?</strong> Il évite de refaire un devis pour chaque petite modification. C'est une réserve d'heures mobilisable immédiatement pour vos ajustements avec une priorité sur le planning.
           </div>
         </section>
 

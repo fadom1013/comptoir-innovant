@@ -15,7 +15,7 @@ export default function Home() {
               <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-tech-glow"></span>
             </span>
             <span className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre">
-              Disponible vos sites et applications métiers
+              Disponible pour vos sites et applications métiers
             </span>
           </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
                   Outils métiers & applications
                 </h3>
                 <p className="text-sm font-medium text-comptoir-encre/80 leading-relaxed">
-                  Pour automatiser vos processus, remplacer des fichiers Excel trop lourds, ou lancer la V1 d'un produit SaaS.
+                  Pour automatiser vos processus, remplacer des fichiers Excel trop lourds, ou lancer une application.
                 </p>
                 <ul className="space-y-2 text-xs font-semibold text-comptoir-encre/90">
                   <li className="flex items-center gap-2"><span className="text-tech-glow font-bold">✔</span> Back-office & espaces clients dédiés</li>
@@ -83,7 +83,7 @@ export default function Home() {
                 href="/offres/principale" 
                 className="font-mono-bistro text-xs font-bold uppercase text-comptoir-encre group-hover:text-tech-spark flex items-center gap-2 pt-4 border-t border-comptoir-encre/10"
               >
-                En savoir plus sur les outils métiers →
+                En savoir plus sur les outils & applications →
               </Link>
             </div>
 
