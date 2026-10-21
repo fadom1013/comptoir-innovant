@@ -94,6 +94,18 @@ export default function OffreSecondairePage() {
                 <span>Rédaction de vos contenus (articles, pages ...) si vos contenus ne sont pas prêts au début du projet.</span>
                 <span className="text-comptoir-accent">+200€</span>
               </div>
+              <div className="p-3 bg-comptoir-fond rounded-lg border-2 border-comptoir-encre flex justify-between items-center">
+                <span>Développement d'une page supplémentaire.</span>
+                <span className="text-comptoir-accent">+150€</span>
+              </div>
+              <div className="p-3 bg-comptoir-fond rounded-lg border-2 border-comptoir-encre flex justify-between items-center">
+                <span>Recherche d'images (Sélection de 10 visuels HD libres de droits).</span>
+                <span className="text-comptoir-accent">+150€</span>
+              </div>
+              <div className="p-3 bg-comptoir-fond rounded-lg border-2 border-comptoir-encre flex justify-between items-center">
+                <span>Maintenance annuelle (Mises à jour technique et de sécurité).</span>
+                <span className="text-comptoir-accent">+200€</span>
+              </div>
             </div>
           </div>
 

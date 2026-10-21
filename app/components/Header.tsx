@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,16 @@ export default function Header() {
         <Link 
           href="/" 
           onClick={() => setIsOpen(false)}
-          className="font-extrabold text-xl tracking-tight text-comptoir-encre hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity"
         >
-          LE COMPTOIR <span className="text-comptoir-accent">INNOVANT</span>
+          <Image
+            src="/logo-comptoir.png"
+            alt="Le Comptoir Innovant - Fabrique Digitale"
+            width={240}
+            height={52}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* DESKTOP NAVIGATION */}
