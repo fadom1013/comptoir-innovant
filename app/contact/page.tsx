@@ -132,11 +132,11 @@ export default function ContactPage() {
                 <div className="space-y-2 text-sm font-semibold">
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
                     <input type="checkbox" name="besoin_pack_essentiel" className="accent-comptoir-accent w-4 h-4" />
-                    <span>Création d'un site complet (Pack Essentiel)</span>
+                    <span>Création d'un site complet</span>
                   </label>
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
                     <input type="checkbox" name="besoin_outil_metier" className="accent-comptoir-accent w-4 h-4" />
-                    <span>Outil métier ou application V1 / MVP</span>
+                    <span>Application ou outil</span>
                   </label>
                   <label className="flex items-center gap-3 p-3 bg-comptoir-fond border-2 border-comptoir-encre rounded-lg cursor-pointer">
                     <input type="checkbox" name="besoin_maintenance" className="accent-comptoir-accent w-4 h-4" />

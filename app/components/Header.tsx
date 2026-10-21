@@ -33,13 +33,13 @@ export default function Header() {
             href="/offres/principale" 
             className="hover:text-comptoir-accent transition-colors py-1 underline decoration-transparent hover:decoration-comptoir-accent underline-offset-4"
           >
-            Outils métiers
+           Sites webs
           </Link>
           <Link 
             href="/offres/secondaire" 
             className="hover:text-comptoir-accent transition-colors py-1 underline decoration-transparent hover:decoration-comptoir-accent underline-offset-4"
           >
-            Sites webs
+            Outils métiers
           </Link>
           <Link 
             href="/philosophie" 
@@ -82,14 +82,14 @@ export default function Header() {
             onClick={() => setIsOpen(false)}
             className="block py-2 text-comptoir-encre border-b border-comptoir-encre/10 hover:text-comptoir-accent"
           >
-            Outils métiers
+            Sites webs
           </Link>
           <Link 
             href="/offres/secondaire" 
             onClick={() => setIsOpen(false)}
             className="block py-2 text-comptoir-encre border-b border-comptoir-encre/10 hover:text-comptoir-accent"
           >
-            Sites webs
+            Outils métiers
           </Link>
           <Link 
             href="/philosophie" 
